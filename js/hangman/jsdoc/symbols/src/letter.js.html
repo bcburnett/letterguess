@@ -1,0 +1,23 @@
+<html><head><meta http-equiv="content-type" content="tehtml; charset=utf-8"> <style>
+	.KEYW {color: #933;}
+	.COMM {color: #bbb; font-style: italic;}
+	.NUMB {color: #393;}
+	.STRN {color: #393;}
+	.REGX {color: #339;}
+	.line {border-right: 1px dotted #666; color: #666; font-style: normal;}
+	</style></head><body><pre><span class='line'>  1</span> <span class="COMM">/* eslint-disable require-jsdoc */</span><span class="WHIT">
+<span class='line'>  2</span> </span><span class="COMM">/* jshint esversion:9*/</span><span class="WHIT">
+<span class='line'>  3</span> </span><span class="NAME">export</span><span class="WHIT"> </span><span class="KEYW">default</span><span class="WHIT"> </span><span class="NAME">class</span><span class="WHIT"> </span><span class="NAME">Letter</span><span class="WHIT"> </span><span class="PUNC">{</span><span class="WHIT">
+<span class='line'>  4</span> </span><span class="WHIT">  </span><span class="NAME">constructor</span><span class="PUNC">(</span><span class="NAME">letter</span><span class="PUNC">)</span><span class="WHIT"> </span><span class="PUNC">{</span><span class="WHIT">
+<span class='line'>  5</span> </span><span class="WHIT">    </span><span class="NAME">this.letter</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">letter</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'>  6</span> </span><span class="WHIT">    </span><span class="NAME">this.correct</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="KEYW">false</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'>  7</span> </span><span class="WHIT">    </span><span class="KEYW">if</span><span class="WHIT"> </span><span class="PUNC">(</span><span class="NAME">this.letter.match</span><span class="PUNC">(</span><span class="REGX">/[ .\'?!,&-]/</span><span class="PUNC">)</span><span class="PUNC">)</span><span class="WHIT"> </span><span class="NAME">this.correct</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="KEYW">true</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'>  8</span> </span><span class="WHIT">  </span><span class="PUNC">}</span><span class="WHIT">
+<span class='line'>  9</span> </span><span class="WHIT">  </span><span class="NAME">doubleSpacedLetter</span><span class="PUNC">(</span><span class="PUNC">)</span><span class="WHIT"> </span><span class="PUNC">{</span><span class="WHIT">
+<span class='line'> 10</span> </span><span class="WHIT">    </span><span class="KEYW">return</span><span class="WHIT"> </span><span class="NAME">this.singleSpacedLetter</span><span class="PUNC">(</span><span class="PUNC">)</span><span class="PUNC">+</span><span class="STRN">' '</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 11</span> </span><span class="WHIT">  </span><span class="PUNC">}</span><span class="WHIT">
+<span class='line'> 12</span> </span><span class="WHIT">  </span><span class="NAME">singleSpacedLetter</span><span class="PUNC">(</span><span class="PUNC">)</span><span class="WHIT"> </span><span class="PUNC">{</span><span class="WHIT">
+<span class='line'> 13</span> </span><span class="WHIT">    </span><span class="KEYW">return</span><span class="WHIT"> </span><span class="NAME">this.correct</span><span class="PUNC">?</span><span class="WHIT"> </span><span class="NAME">this.letter</span><span class="WHIT"> </span><span class="PUNC">:</span><span class="STRN">'_'</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 14</span> </span><span class="WHIT">  </span><span class="PUNC">}</span><span class="WHIT">
+<span class='line'> 15</span> </span><span class="PUNC">}</span><span class="WHIT">
+<span class='line'> 16</span> </span></pre></bodyhtml>
